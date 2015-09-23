@@ -1,0 +1,25 @@
+{
+  "name": "fascia-desktop",
+  "version": "1.0.0",
+  "description": "desktop application of fascia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fascia/fascia-desktop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fascia/fascia-desktop/issues"
+  },
+  "homepage": "https://github.com/fascia/fascia-desktop",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "electron-prebuilt": "^0.33.1",
+    "react": "^0.13.3"
+  }
+}
