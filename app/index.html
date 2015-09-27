@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello World!</title>
+        <title>flasher</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div id="container"></div>
+        <script>
+            window.onload = function() {
+                require("babel/register")()
+                require("./react/index.jsx")
+            }
+        </script>
+        <!--
         We are using io.js <script>document.write(process.version)</script>
         and Electron <script>document.write(process.versions['electron'])</script>.
+        -->
     </body>
 </html>
