@@ -1,4 +1,6 @@
-# fascia-desktop
+# flasher-desktop
+
+flasherはElectron, React, Babelによる最もシンプルなノートブックです.
 
 ## How to Run Local
 

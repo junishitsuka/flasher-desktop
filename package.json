@@ -1,22 +1,22 @@
 {
-  "name": "fascia-desktop",
+  "name": "flasher-desktop",
   "version": "1.0.0",
-  "description": "desktop application of fascia",
+  "description": "desktop application of flasher",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fascia/fascia-desktop.git"
+    "url": "https://github.com/junishitsuka/flasher-desktop.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fascia/fascia-desktop/issues"
+    "url": "https://github.com/junishitsuka/flasher-desktop/issues"
   },
-  "homepage": "https://github.com/fascia/fascia-desktop",
+  "homepage": "https://github.com/junishitsuka/flasher-desktop",
   "dependencies": {
     "babel": "^5.8.23",
     "electron-prebuilt": "^0.33.1",
