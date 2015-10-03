@@ -1,0 +1,11 @@
+/*
+ * original stylesheet
+ */
+
+span.app-name {
+    color: #DAA520;
+}
+
+p.email-content-subtitle {
+    margin: 1em 0 0 5em;
+}

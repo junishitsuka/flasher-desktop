@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="./public/stylesheets/pure-min.css" media="all">
         <link rel="stylesheet" href="./public/stylesheets/layouts/email.css" media="all">
         <link rel="stylesheet" href="./public/stylesheets/layouts/email-old-ie.css" media="all">
+        <link rel="stylesheet" href="./public/stylesheets/style.css" media="all">
     </head>
     <body>
         <!-- <div id="container"></div> -->
@@ -14,19 +15,14 @@
                 <a href="#" class="nav-menu-button">Menu</a>
 
                 <div class="nav-inner">
-                    <button class="primary-button pure-button">Flasher</button>
+                    <div><span class="app-name"># Flasher</span></div>
+                    <button class="primary-button pure-button">+ New Note</button>
 
                     <div class="pure-menu">
                         <ul class="pure-menu-list">
-                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Inbox <span class="email-count">(2)</span></a></li>
-                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Important</a></li>
-                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sent</a></li>
-                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Drafts</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Notes <span class="email-count">(3)</span></a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Star</a></li>
                             <li class="pure-menu-item"><a href="#" class="pure-menu-link">Trash</a></li>
-                            <li class="pure-menu-heading">Labels</li>
-                            <li class="pure-menu-item"><a href="#" class="pure-menu-link"><span class="email-label-personal"></span>Personal</a></li>
-                            <li class="pure-menu-item"><a href="#" class="pure-menu-link"><span class="email-label-work"></span>Work</a></li>
-                            <li class="pure-menu-item"><a href="#" class="pure-menu-link"><span class="email-label-travel"></span>Travel</a></li>
                         </ul>
                     </div>
                 </div>
@@ -34,11 +30,7 @@
 
             <div id="list" class="pure-u-1">
                 <div class="email-item email-item-selected pure-g">
-                    <div class="pure-u">
-                    </div>
-
                     <div class="pure-u-3-4">
-                        <h5 class="email-name">Tilo Mitra</h5>
                         <h4 class="email-subject">Hello from Toronto</h4>
                         <p class="email-desc">
                         Hey, I just wanted to check in with you from Toronto. I got here earlier today.
@@ -47,11 +39,7 @@
                 </div>
 
                 <div class="email-item email-item-unread pure-g">
-                    <div class="pure-u">
-                    </div>
-
                     <div class="pure-u-3-4">
-                        <h5 class="email-name">Eric Ferraiuolo</h5>
                         <h4 class="email-subject">Re: Pull Requests</h4>
                         <p class="email-desc">
                         Hey, I had some feedback for pull request #51. We should center the menu so it looks better on mobile.
@@ -60,11 +48,7 @@
                 </div>
 
                 <div class="email-item email-item-unread pure-g">
-                    <div class="pure-u">
-                    </div>
-
                     <div class="pure-u-3-4">
-                        <h5 class="email-name">YUI Library</h5>
                         <h4 class="email-subject">You have 5 bugs assigned to you</h4>
                         <p class="email-desc">
                         Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla.
@@ -79,14 +63,13 @@
                         <div class="pure-u-1-2">
                             <h1 class="email-content-title">Hello from Toronto</h1>
                             <p class="email-content-subtitle">
-                            From <a>Tilo Mitra</a> at <span>3:56pm, April 3, 2012</span>
+                            at <span>3:56pm, April 3, 2012</span>
                             </p>
                         </div>
 
                         <div class="email-content-controls pure-u-1-2">
-                            <button class="secondary-button pure-button">Reply</button>
-                            <button class="secondary-button pure-button">Forward</button>
-                            <button class="secondary-button pure-button">Move to</button>
+                            <button class="secondary-button pure-button">Start</button>
+                            <button class="secondary-button pure-button">Delete</button>
                         </div>
                     </div>
 
@@ -96,9 +79,6 @@
                         </p>
                         <p>
                         Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                        Aliquam ac feugiat dolor. Proin mattis massa sit amet enim iaculis tincidunt. Mauris tempor mi vitae sem aliquet pharetra. Fusce in dui purus, nec malesuada mauris. Curabitur ornare arcu quis mi blandit laoreet. Vivamus imperdiet fermentum mauris, ac posuere urna tempor at. Duis pellentesque justo ac sapien aliquet egestas. Morbi enim mi, porta eget ullamcorper at, pharetra id lorem.
                         </p>
                         <p>
                         Donec sagittis dolor ut quam pharetra pretium varius in nibh. Suspendisse potenti. Donec imperdiet, velit vel adipiscing bibendum, leo eros tristique augue, eu rutrum lacus sapien vel quam. Nam orci arcu, luctus quis vestibulum ut, ullamcorper ut enim. Morbi semper erat quis orci aliquet condimentum. Nam interdum mauris sed massa dignissim rhoncus.
