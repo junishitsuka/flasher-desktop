@@ -20,30 +20,26 @@ var Note = React.createClass({
     render: function() {
         var note = this.props.note
         return (
-            <li>{note.title} created_at:{note.created_at}</li>
+            <div className="email-item email-item-selected pure-g">
+                <div className="pure-u-3-4">
+                    <h4 className="email-subject">{note.title}</h4>
+                    <p className="email-desc">
+                    {note.created_at}
+                    </p>
+                </div>
+            </div>
         )
     }
 })
 
 var NoteList = React.createClass({
     render: function() {
-        var lists = this.props.notes.map(function(note) {
+        var lists = notes.map(function(note) {
             return (<Note key={note.id} note={note}></Note>)
         })
         return (
-            <div class="notes">
-                <ul>{lists}</ul>
-            </div>
-        )
-    }
-})
-
-var App = React.createClass({
-    render: function() {
-        return (
             <div>
-                <h1>Flasher</h1>
-                <NoteList notes={notes} />
+                {lists}
             </div>
         )
     }
@@ -71,5 +67,5 @@ var MenuList = React.createClass({
     }
 })
 
-// React.render(<App />, document.querySelector("#container"))
+React.render(<NoteList />, document.querySelector("#notelist"))
 React.render(<MenuList />, document.querySelector("#menulist"))
