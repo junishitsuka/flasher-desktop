@@ -49,5 +49,27 @@ var App = React.createClass({
     }
 })
 
-var container = document.querySelector("#container")
-React.render(<App />, container)
+var MenuList = React.createClass({
+    render: function() {
+        return (
+            <div>
+                <ul className="pure-menu-list">
+                    <li className="pure-menu-item">
+                        <a href="#" className="pure-menu-link">
+                            Notes <span className="email-count">({notes.length})</span>
+                        </a>
+                    </li>
+                    <li className="pure-menu-item">
+                        <a href="#" className="pure-menu-link">Star</a>
+                    </li>
+                    <li className="pure-menu-item">
+                        <a href="#" className="pure-menu-link">Trash</a>
+                    </li>
+                </ul>
+            </div>
+        )
+    }
+})
+
+// React.render(<App />, document.querySelector("#container"))
+React.render(<MenuList />, document.querySelector("#menulist"))
