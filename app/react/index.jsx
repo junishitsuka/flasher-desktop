@@ -4,14 +4,14 @@ var notes = [
 {
     id: 1,
     title: "sample1",
-    content: "内容",
+    desc: "内容",
     created_at: "2015-08-11 00:11:11",
     updated_at: "2015-09-01 22:12:22"
 },
 {
     id: 2,
     title: "sample2",
-    content: "内容",
+    desc: "内容",
     created_at: "2015-09-11 00:11:11",
     updated_at: "2015-10-01 22:12:22"
 }]
@@ -67,5 +67,35 @@ var MenuList = React.createClass({
     }
 })
 
+var SelectedNote = React.createClass({
+    render: function() {
+        var selected = notes[0]
+        return (
+            <div className="email-content">
+                <div className="email-content-header pure-g">
+                    <div className="pure-u-1-2">
+                        <h1 className="email-content-title">{selected.title}</h1>
+                        <p className="email-content-subtitle">
+                        at <span>{selected.created_at}</span>
+                        </p>
+                    </div>
+
+                    <div className="email-content-controls pure-u-1-2">
+                        <button className="secondary-button pure-button">Star</button>
+                        <button className="secondary-button pure-button">Delete</button>
+                    </div>
+                </div>
+
+                <div className="email-content-body">
+                    <p>
+                        {selected.desc}
+                    </p>
+                </div>
+            </div>
+        )
+    }
+})
+
 React.render(<NoteList />, document.querySelector("#notelist"))
 React.render(<MenuList />, document.querySelector("#menulist"))
+React.render(<SelectedNote />, document.querySelector("#selectednote"))
