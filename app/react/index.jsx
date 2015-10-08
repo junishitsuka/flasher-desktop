@@ -1,20 +1,40 @@
-import React from 'react'
+import React from "react"
+import sqlite3 from "sqlite3"
 
 var notes = [
 {
-    id: 1,
     title: "sample1",
     desc: "内容",
     created_at: "2015-08-11 00:11:11",
     updated_at: "2015-09-01 22:12:22"
 },
 {
-    id: 2,
     title: "sample2",
     desc: "内容",
     created_at: "2015-09-11 00:11:11",
     updated_at: "2015-10-01 22:12:22"
 }]
+
+var sqlite = sqlite3.verbose()
+var db = new sqlite.Database("flasher-desktop.db")
+
+db.serialize(function() {
+    // create table
+    // db.run("CREATE TABLE notes (title TEXT, desc TEXT, created_at TEXT, updated_at TEXT)")
+
+    // insert data
+    // var stmt = db.prepare("INSERT INTO notes VALUES (?, ?, ?, ?)")
+    // notes.forEach(function(v) {
+    //     stmt.run(v.title, v.desc, v.created_at, v.updated_at)
+    // })
+    // stmt.finalize() // finalizeしないとコミットが遅れる場合がある
+
+    db.each("SELECT rowid AS id, title FROM notes", function(err, row) {
+        console.log(row)
+    });
+});
+
+db.close()
 
 var Note = React.createClass({
     render: function() {

@@ -21,6 +21,7 @@
     "babel": "^5.8.23",
     "electron-prebuilt": "^0.33.1",
     "purecss": "^0.6.0",
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "sqlite3": "^3.1.0"
   }
 }
