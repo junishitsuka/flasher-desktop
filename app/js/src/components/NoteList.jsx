@@ -3,7 +3,7 @@ import Note from "./Note.jsx";
 
 export default class NoteList extends Component {
     render() {
-        var lists = notes.map(function(note) {
+        var lists = this.props.list.map(function(note) {
             return (<Note key={note.id} note={note}></Note>)
         })
         return (
