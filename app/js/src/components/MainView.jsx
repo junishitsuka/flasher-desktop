@@ -1,11 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
+import SideBar from "./SideBar.jsx";
 
-export default class MainView extends React.Component {
+export default class MainView extends Component {
     render() {
         return (
             <div>
-                <h1>Main View</h1>
+                <SideBar />
             </div>
-        )
+        );
     }
 }
