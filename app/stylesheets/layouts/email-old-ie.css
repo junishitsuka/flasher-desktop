@@ -277,10 +277,10 @@ a {
 
 #main {
     position: fixed;
-    top: 33%;
+    top: 0%;
     right: 0;
     bottom: 0;
-    left: 150px;
+    left: 500px;
     overflow: auto;
     width: auto;
     /* so that it's not 100% */
@@ -304,7 +304,7 @@ a {
 /* This will now take up it's own column, so don't need position: fixed; */
 
 #main {
-    position: static;
+    /* position: static; */
     margin: 0;
     padding: 0;
 }

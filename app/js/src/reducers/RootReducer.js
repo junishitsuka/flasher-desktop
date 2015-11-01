@@ -18,7 +18,8 @@ var note = [
 ];
 
 const initialState = {
-    note: note
+    note: note,
+    selected: 0
 };
 
 export default function RootReducer(state = initialState, action) {

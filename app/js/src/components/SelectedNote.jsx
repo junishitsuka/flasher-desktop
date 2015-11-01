@@ -7,9 +7,9 @@ export default class SelectedNote extends Component {
                 <div id="selectednote" className="email-content">
                     <div className="email-content-header pure-g">
                         <div className="pure-u-1-2">
-                            <h1 className="email-content-title">{selected.title}</h1>
+                            <h1 className="email-content-title">{this.props.note.title}</h1>
                             <p className="email-content-subtitle">
-                            at <span>{selected.created_at}</span>
+                            at <span>{this.props.note.created_at}</span>
                             </p>
                         </div>
 
@@ -21,7 +21,7 @@ export default class SelectedNote extends Component {
 
                     <div className="email-content-body">
                         <p>
-                            {selected.desc}
+                            {this.props.note.desc}
                         </p>
                     </div>
                 </div>
