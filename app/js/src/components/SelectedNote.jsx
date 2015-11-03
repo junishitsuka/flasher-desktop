@@ -26,6 +26,6 @@ export default class SelectedNote extends Component {
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
