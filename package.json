@@ -53,10 +53,11 @@
   },
   "dependencies": {
     "electron-prebuilt": "^0.33.1",
-    "purecss": "^0.6.0",
-    "redux-devtools": "^2.1.5",
-    "sqlite3": "^3.1.0",
     "history": "^1.12.5",
-    "react-dom": "^0.14.0"
+    "moment": "^2.10.6",
+    "purecss": "^0.6.0",
+    "react-dom": "^0.14.0",
+    "redux-devtools": "^2.1.5",
+    "sqlite3": "^3.1.0"
   }
 }

@@ -8,7 +8,7 @@ export default class SideBar extends Component {
 
                 <div className="nav-inner">
                     <div><span className="app-name"># Flasher</span></div>
-                    <button className="primary-button pure-button">+ New Note</button>
+                    <button className="primary-button pure-button" onClick={() => this.props.onClick()}>+ New Note</button>
                     <div className="pure-menu" id="menulist"></div>
                     <div>
                         <ul className="pure-menu-list">

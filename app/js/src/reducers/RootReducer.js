@@ -1,4 +1,5 @@
 import { PUSH_NEW_BUTTON } from "../actions/RootAction";
+import moment from "../../../../node_modules/moment/min/moment.min";
 
 var note = [
     {
@@ -19,14 +20,26 @@ var note = [
 
 const initialState = {
     note: note,
-    selected: 0
+    index: 0,
+    count: 2
 };
 
 export default function RootReducer(state = initialState, action) {
     switch (action.type) {
     case PUSH_NEW_BUTTON:
+        var m = moment();
+        var current = m.format("YYYY-MM-DD HH:mm:ss");
+        var count = state.count + 1;
+        var newNoteList = [{
+            id: count,
+            title: "",
+            desc: "",
+            created_at: current,
+            updated_at: current
+        }];
         return Object.assign({}, state, {
-            count: state.count + 1
+            note: newNoteList.concat(state.note),
+            count: count
         });
     default:
         return state;

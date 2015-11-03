@@ -9,7 +9,7 @@ export default class MainView extends Component {
 
         return (
             <div>
-                <SideBar />
+                <SideBar onClick={() => this.props.pushNewButton()} />
                 <NoteList list={ note } />
                 <SelectedNote note={ note[selected] } />
             </div>
