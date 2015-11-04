@@ -5,13 +5,13 @@ import SelectedNote from "./SelectedNote.jsx";
 
 export default class MainView extends Component {
     render() {
-        const { note, selected } = this.props.state;
+        const { note, index } = this.props.state;
 
         return (
             <div>
                 <SideBar onClick={() => this.props.pushNewButton()} />
                 <NoteList list={ note } />
-                <SelectedNote note={ note[selected] } />
+                <SelectedNote note={ note[index] } />
             </div>
         );
     }

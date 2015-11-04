@@ -32,7 +32,7 @@ export default function RootReducer(state = initialState, action) {
         var count = state.count + 1;
         var newNoteList = [{
             id: count,
-            title: "",
+            title: "New Note",
             desc: "",
             created_at: current,
             updated_at: current
