@@ -2,14 +2,15 @@ import React, {Component} from "react";
 
 export default class SelectedNote extends Component {
     render() {
+        let note = this.props.note;
         return (
             <div id="main" className="pure-u-1">
                 <div id="selectednote" className="email-content">
                     <div className="email-content-header pure-g">
                         <div className="pure-u-1-2">
-                            <h1 className="email-content-title">{this.props.note.title}</h1>
+                            <h1 className="email-content-title">{ note.title }</h1>
                             <p className="email-content-subtitle">
-                            at <span>{this.props.note.created_at}</span>
+                            at <span>{ note.created_at }</span>
                             </p>
                         </div>
 
@@ -20,9 +21,7 @@ export default class SelectedNote extends Component {
                     </div>
 
                     <div className="email-content-body">
-                        <p>
-                            {this.props.note.desc}
-                        </p>
+                        <p>{ note.desc }</p>
                     </div>
                 </div>
             </div>
