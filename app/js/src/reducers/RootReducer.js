@@ -39,6 +39,7 @@ export default function RootReducer(state = initialState, action) {
         }];
         return Object.assign({}, state, {
             note: newNoteList.concat(state.note),
+            noteId: count,
             count: count
         });
     case SELECT_NOTE:
