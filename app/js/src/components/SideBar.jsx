@@ -14,17 +14,17 @@ export default class SideBar extends Component {
                         <ul className="pure-menu-list">
                             <li className="pure-menu-item">
                                 <a href="#" className="pure-menu-link">
-                                    Note <span className="email-count">(2)</span>
+                                    Note <span className="email-count">({ this.props.len })</span>
                                 </a>
                             </li>
                             <li className="pure-menu-item">
                                 <a href="#" className="pure-menu-link">
-                                    Star <span className="email-count">(2)</span>
+                                    Star <span className="email-count"></span>
                                 </a>
                             </li>
                             <li className="pure-menu-item">
                                 <a href="#" className="pure-menu-link">
-                                    Trash <span className="email-count">(2)</span>
+                                    Trash <span className="email-count"></span>
                                 </a>
                             </li>
                         </ul>

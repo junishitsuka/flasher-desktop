@@ -9,7 +9,7 @@ export default class MainView extends Component {
 
         return (
             <div>
-                <SideBar onClick={() => this.props.pushNewButton()} />
+                <SideBar len={ note.length } onClick={() => this.props.pushNewButton()} />
                 <NoteList note={ note } noteId={ noteId } selectNote={ this.props.selectNote } />
                 <SelectedNote note={ note.filter((n) => n.id == noteId)[0] } />
             </div>
