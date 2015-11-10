@@ -1,4 +1,4 @@
-import { PUSH_NEW_BUTTON, SELECT_NOTE } from "../actions/RootAction";
+import { PUSH_NEW_BUTTON, SELECT_NOTE, UPDATE_SELECTED_TITLE, UPDATE_SELECTED_DESC } from "../actions/RootAction";
 import moment from "../../../../node_modules/moment/min/moment.min";
 
 var note = [
@@ -46,7 +46,30 @@ export default function RootReducer(state = initialState, action) {
         return Object.assign({}, state, {
             noteId: action.noteId
         });
+    case UPDATE_SELECTED_TITLE:
+        var index = getIndexById(state.note, state.noteId);
+        var updateNote = state.note;
+        updateNote[index].title = action.text
+        return Object.assign({}, state, {
+            note: updateNote
+        });
+    case UPDATE_SELECTED_DESC:
+        var index = getIndexById(state.note, state.noteId);
+        var updateNote = state.note;
+        updateNote[index].desc = action.text
+        return Object.assign({}, state, {
+            note: updateNote
+        });
     default:
         return state;
     }
 };
+
+function getIndexById(note, id) {
+    for (var i = 0; i < note.length; i++) {
+        if (note[i].id == id) {
+            return i;
+        }
+    }
+    return;
+}

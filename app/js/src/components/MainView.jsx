@@ -11,7 +11,7 @@ export default class MainView extends Component {
             <div>
                 <SideBar len={ note.length } onClick={() => this.props.pushNewButton()} />
                 <NoteList note={ note } noteId={ noteId } selectNote={ this.props.selectNote } />
-                <SelectedNote note={ note.filter((n) => n.id == noteId)[0] } />
+                <SelectedNote note={ note.filter((n) => n.id == noteId)[0] } onTitleChange={this.props.updateSelectedTitle} onDescChange={this.props.updateSelectedDesc} />
             </div>
         );
     }

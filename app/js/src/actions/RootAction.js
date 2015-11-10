@@ -12,3 +12,19 @@ export function selectNote(noteId) {
         noteId: noteId
     };
 };
+
+export const UPDATE_SELECTED_TITLE = "UPDATE_SELECTED_TITLE";
+export function updateSelectedTitle(e) {
+    return {
+        type: UPDATE_SELECTED_TITLE,
+        text: e.target.value
+    };
+};
+
+export const UPDATE_SELECTED_DESC = "UPDATE_SELECTED_DESC";
+export function updateSelectedDesc(e) {
+    return {
+        type: UPDATE_SELECTED_DESC,
+        text: e.target.value
+    };
+};

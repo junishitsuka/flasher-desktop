@@ -8,7 +8,7 @@ export default class SelectedNote extends Component {
                 <div id="selectednote" className="email-content">
                     <div className="email-content-header pure-g">
                         <div className="pure-u-1-2">
-                            <h1 className="email-content-title">{ note.title }</h1>
+                            <textarea className="email-content-title" onChange={this.props.onTitleChange} value={ note.title } />
                             <p className="email-content-subtitle">
                             at <span>{ note.created_at }</span>
                             </p>
@@ -21,7 +21,7 @@ export default class SelectedNote extends Component {
                     </div>
 
                     <div className="email-content-body">
-                        <p>{ note.desc }</p>
+                        <textarea onChange={this.props.onDescChange} value={ note.desc } />
                     </div>
                 </div>
             </div>
