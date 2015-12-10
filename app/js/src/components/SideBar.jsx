@@ -1,4 +1,4 @@
-import React, {findDOMNode, Component, ProtoTypes} from "react";
+import React, { Component } from "react";
 
 export default class SideBar extends Component {
     render() {
